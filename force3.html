@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Brain network</title>
+    <script type="text/javascript" src="d3/d3.min.js"></script>
+    <script type="text/javascript" src="d3/d3.geom.min.js"></script>
+    <script type="text/javascript" src="d3/d3.layout.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="force.css"/>
+  </head>
+  <body>
+    <H1> A graph of the brain using diffusion MRI data - lobe colored</H1>
+   
+    <p>One can drag nodes inside the application and see the recombination of the graph. In addition, putting the mouse over a node will highlight its connections. The initial graph without the lobe coloring is <a href="index.html">here</a>. A variant of this graph were nodes can have fixed positions is available on <a href="force2.html">this page</a>.
+    </p>
+    <div id="chart"></div>
+    <script type="text/javascript" src="force3.js"></script>
+    <p> 
+     Color code: a color corresponds to a lobe (13 lobes) <font color="#1f77b4">frontal_rx</font> <font color=" #aec7e8">frontal_lx</font>  <font color="#ff7f0e">cingulate_rx</font> <font color="#ffbb78">cingulate_lx</font> <font color="#2ca02c">parietal_rx</font> <font color="#98df8a">parietal_lx</font> <font color="#d62728 ">occipital_rx</font> <font color="#ff9896">occipital_lx</font> <font color="#9467bd">temporal_rx</font> <font color="#c5b0d5">temporal_lx</font> <font color="#8c564b ">subcortical_rx</font> <font color="#c49c94">subcortical_lx</font> <font color="#e377c2 ">brainstem</font>.
+    </p>
+    <p>The locations of the regions on the brain are given in the following image. The color code is different. The additional regions not represented in the image corresponds to the inner brain region (subcortical, light green and light brown on the graph) and the brainstem (in pink on the graph).</p>
+  <img src="DesikanKilliany.jpg"></img>
+  </body>
+</html>
