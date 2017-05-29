@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Brain network</title>
+    <!-- <script type="text/javascript" src="d3/d3.min.js"></script>
+    <script type="text/javascript" src="d3/d3.geom.min.js"></script>
+    <script type="text/javascript" src="d3/d3.layout.min.js"></script>-->
+    <script type="text/javascript" src="d3-master/d3.min.js"></script>
+    <script type='text/javascript' src="jquery-ui.min.js"> </script>
+    <script type='text/javascript' src="jquery-ui.css"> </script>
+    <link type="text/css" rel="stylesheet" href="force.css"/>
+  </head>
+  <body>
+    <H1> A graph of the brain using diffusion MRI data</H1>
+    <p>The diffusion MRI technique is able to measure the quantity of fibers between different regions of the brain. These data has been used here to represent the Brain and its connections as a graph. In the following figure, each node is a brain region of the Desikan-Killiany Atlas. Each vertex illustrates the connection between two brain regions. The node haven't been placed according to their spatial coordinates on the brain. They are free to move, providing they follow some physical rules given by the force layout.
+    </p>
+    <p>One can drag nodes inside the application and see the recombination of the graph. In addition, putting the mouse over a node will highlight its connections. A variant of this graph were nodes can have fixed positions is available on <a href="force2.html">this page</a>. A version of the graph with nodes colored according to the lobes they belong to is given <a href="force3.html">here</a>.
+    </p>
+    <div class="ui-widget">
+    <input id="search">
+    <button type="button" onclick="searchNode()">Search</button>
+    </div>
+    <div id="chart"></div>
+    <script type="text/javascript" src="force2016_2.js"></script>
+    <p> 
+     Color code: <font color="#1f77b4">Right hemisphere</font> <font color=" #aec7e8">Left hemisphere</font>  <font color="#ff7f0e">Brain stem</font>.
+    </p>
+    <p>The locations of the regions on the brain are given in the following image. The color code is different. The additional regions not represented in the image corresponds to the inner brain region (subcortical) and the brainstem.</p>
+  <img src="DesikanKilliany.jpg"></img>
+  </body>
+</html>

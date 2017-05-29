@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Brain network</title>
+    <script type="text/javascript" src="d3/d3.min.js"></script>
+    <script type="text/javascript" src="d3/d3.geom.min.js"></script>
+    <script type="text/javascript" src="d3/d3.layout.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="force.css"/>
+  </head>
+  <body>
+    <H1> A graph of the brain using diffusion MRI data - sticky nodes version</H1>
+    <p>One can drag nodes inside the application and see the recombination of the graph. The action of dragging a node will stick it on the page. Double click on the node to release it. The initial graph is <a href="index.html">here</a>. A variant of this graph with the lobe coloring is available on <a href="force3.html">this page</a>.
+    </p>
+    <div id="chart"></div>
+    <script type="text/javascript" src="force2.js"></script>
+    <p> 
+     Color code: <font color="#1f77b4">Right hemisphere</font>, <font color=" #aec7e8">Left hemisphere</font>,  <font color="#ff7f0e">Brain stem</font>.
+    </p>
+    <p>The locations of the regions on the brain are given in the following image. The color code is different. The additional regions not represented in the image corresponds to the inner brain region (subcortical) and the brainstem.</p>
+  <img src="DesikanKilliany.jpg"></img>
+  </body>
+</html>
